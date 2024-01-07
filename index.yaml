@@ -1,0 +1,42 @@
+apiVersion: v1
+entries:
+  cert-manager-hetzner:
+  - annotations:
+      max_scale_version: 23.10.2
+      min_scale_version: 23.10.0
+      truecharts.org/SCALE-support: "true"
+      truecharts.org/category: Other
+      truecharts.org/max_helm_version: "3.13"
+      truecharts.org/min_helm_version: "3.12"
+      truecharts.org/train: operators
+    apiVersion: v2
+    appVersion: 1.2.2
+    created: "2024-01-07T21:14:28.490578783Z"
+    dependencies:
+    - name: common
+      repository: oci://tccr.io/truecharts
+      version: 17.2.21
+    - name: cert-manager-webhook-hetzner
+      repository: https://vadimkim.github.io/cert-manager-webhook-hetzner
+      version: 1.2.2
+    description: IPTV service providing streaming, playlist, search engine and epg.
+    digest: 0837f4d655ea29900efac0b6c73eb7dc661259348799fa3f2f46e300099e46c5
+    home: https://github.com/bahuma20/bahuma-charts/tree/master/charts/cert-manager-webhook-hetzner
+    icon: https://truecharts.org/img/hotlink-ok/chart-icons/acestream.png
+    keywords:
+    - hetzner
+    - cert
+    - dns
+    kubeVersion: '>=1.24.0-0'
+    maintainers:
+    - email: max.bachhuber@bahuma.io
+      name: Max Bachhuber
+      url: https://bahuma.io
+    name: cert-manager-hetzner
+    sources:
+    - https://github.com/bahuma20/bahuma-charts/tree/master/charts/cert-manager-webhook-hetzner
+    type: application
+    urls:
+    - https://github.com/bahuma20/bahuma-charts/releases/download/cert-manager-hetzner-1.0.4/cert-manager-hetzner-1.0.4.tgz
+    version: 1.0.4
+generated: "2024-01-07T21:14:28.490588861Z"
