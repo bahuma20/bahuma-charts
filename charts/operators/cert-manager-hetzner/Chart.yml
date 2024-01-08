@@ -1,14 +1,14 @@
 kubeVersion: ">=1.24.0-0"
 apiVersion: v2
-name: cert-manager-webhook-hetzner
-version: 1.0.1
+name: cert-manager-hetzner
+version: 1.0.2
 appVersion: 1.2.2
 description: IPTV service providing streaming, playlist, search engine and epg.
-home: https://github.com/bahuma20/bahuma-charts/tree/master/charts/cert-manager-webhook-hetzner
+home: https://github.com/bahuma20/bahuma-charts/tree/master/charts/cert-manager-hetzner
 icon: https://truecharts.org/img/hotlink-ok/chart-icons/acestream.png
 deprecated: false
 sources:
-  - https://github.com/bahuma20/bahuma-charts/tree/master/charts/cert-manager-webhook-hetzner
+  - https://github.com/bahuma20/bahuma-charts/tree/master/charts/cert-manager-hetzner
 maintainers:
   - name: Max Bachhuber
     email: max.bachhuber@bahuma.io
