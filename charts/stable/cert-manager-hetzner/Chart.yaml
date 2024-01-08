@@ -39,5 +39,5 @@ annotations:
   truecharts.org/category: Other
   truecharts.org/max_helm_version: "3.13"
   truecharts.org/min_helm_version: "3.12"
-  truecharts.org/train: operators
+  truecharts.org/train: stable
 type: application
