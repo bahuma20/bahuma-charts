@@ -125,7 +125,7 @@ jobs:
           # Fix sh files to always be executable
           find . -name '*.sh' | xargs chmod +x
 
-      - name: Checkout
+      - name: Checkout Website
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
         if: |
           steps.collect-changes.outputs.changesDetectedAfterTag == 'true'
@@ -269,6 +269,23 @@ jobs:
           token: ${{ secrets.BOT_TOKEN }}
           ref: staging
           path: catalog
+
+      - name: Checkout truecharts/charts
+        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
+        if: |
+          steps.collect-changes.outputs.changesDetectedAfterTag == 'true'
+        with:
+          fetch-depth: 1
+          repository: truecharts/charts
+          ref: master
+          path: truecharts
+      
+      - name: copy templates
+        shell: bash
+        if: |
+          steps.collect-changes.outputs.changesDetectedAfterTag == 'true'
+        run: |
+          cp -r truecharts/templates templates
 
       - name: build catalog
         shell: bash
