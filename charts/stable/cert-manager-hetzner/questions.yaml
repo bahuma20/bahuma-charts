@@ -1,7 +1,7 @@
 # Include{groups}
 questions:
 # Include{global}
-  - variable: certManagerWebhookHetzner
+  - variable: certmanagerwebhookhetzner
     group: App Configuration
     label: Cert Manager Webhook Hetzner Configuration
     schema:
